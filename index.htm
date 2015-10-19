@@ -3,14 +3,16 @@
 <head>
 <title>  Vshine Technology  </title> 
 <link href="css/style.css" rel="stylesheet"   type="text/css" />
-
-<!-- <style>
-head {background-color:blue}
-body   {background-color:blue}
-p    {color:green} -->
-</style>
-
+<script src="ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script>
+$(document).ready(function() {
+    $('ul.navigation').on('click', 'a', function() {       
+        // e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+    });
+});
   // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -86,9 +88,9 @@ p    {color:green} -->
 </div> <!--  end of logo -->
 
 <div class="bg-link">
-<ul>        
-<li><a href="#profile">ABOUT US</a></li>       
-<li><a href="#product" >PRODUCT LIST</a></li>        
+<ul class="navigation">
+<li><a href="" >PRODUCT LIST</a></li> 
+<li><a href="">ABOUT US</a></li>             
 <li><a href="mailto:chinacommece@hotmail.com">CONTACT US</a></li>
 </ul>   
 </div>  <!--  end of bg-link -->
@@ -97,11 +99,18 @@ p    {color:green} -->
 
 </div>  <!--  end of header -->
 
+
 <div id="slide">
-<p>Slide</p>
+<!-- <p>slide</p> -->
+<img src="static/cover3.jpg" alt="vshine tech" width="100%" height="430px"/>
+<span>
+<p>The website is under construction.</p>
+<p>For all business inquiries please contact us at</p>
+<p><b>chinacommece@hotmail.com</b></p>
+</span>
 </div>
 
-<span class="anchor" id="profile"></span>
+<!-- <span class="anchor" id="profile"></span>
 <div class="profile">
 <p>Company description</p>
 </div>
@@ -109,7 +118,7 @@ p    {color:green} -->
 <span class="anchor" id="product"></span>
 <div class="product">
 <p>Product list</p>
-</div>
+</div> -->
 
 <!-- <div id="contact">
 <ul>
@@ -124,16 +133,17 @@ p    {color:green} -->
 
 <div id="foot">
 <p class=footfont>
-Copyright &#169; Chengdu Vshine Technology Co. Ltd <br> No.88,Wangjiang Road, Xinjin County &nbsp;&nbsp;
+Copyright &#169; Chengdu Vshine Technology Co. Ltd <br> No.88,Wangjiang Road, Xinjin County, Chengdu, Sichuan, China 610000
 <br>chinacommece@hotmail.com
-<br>(86 28) 82515538
+<br>Tel: (86 28) 82515538
 </p>
 <div class="sociallogo">
 <!-- <div class="sociallogogroup"> -->
+<a href="https://plus.google.com/+VshineTechnology/posts"><img src="static/g.png" width="50px"/></a>
 <a href=""><img src="static/f.png" width="50px"/></a>
 <a href=""><img src="static/twitter.png" width="50px"/></a>
-<a href=""><img src="static/lk.png" width="50px"/></a>
-<a href="https://plus.google.com/+VshineTechnology/posts"><img src="static/g.png" width="50px"/></a>
+<!-- <a href=""><img src="static/lk.png" width="50px"/></a> -->
+
 <!-- </div> -->
 </div>
 </div>

@@ -84,7 +84,7 @@ padding: 20px;
 color: black;
 text-decoration: none;
 transition:all 0.25s ease-out;
-opacity: 0.8;
+opacity: 0.9;
 }
 
 #header ul{    
@@ -112,10 +112,11 @@ font-size: 14px;
 font-weight:100;
 width:100%; 
 text-align: center;
-/*margin:0px auto;*/
+margin-top:-3px;
 color:white;
 background-image: url(../static/grey.png);
 height:100px;
+/*position:fixed;*/
 /*border-top: 3px solid #77933c;*/
 }
 
@@ -143,8 +144,43 @@ right:10px;
 #slide{
 margin-top: 120px;
 width:100%;
-min-height:500px;
+/*height:100%;*/
+/*min-height:500px;*/
 }
+
+#slide img{
+position: relative;
+width:100%;
+opacity: 0.5;
+/*margin-top: -350px;*/
+}
+
+#slide span{
+position: absolute;
+top:250px;
+left:30%;
+text-align: center;
+font-size: 18px;
+width:500px;
+height:150px;
+margin:0 auto;
+/*color: white; */
+/*font: bold 24px/45px Helvetica, Sans-Serif; */
+/*letter-spacing: -1px;  */
+/*background: white;  fallback color */
+background: rgba(248, 248, 255, 0.85);
+padding: 10px; 
+}
+/*#description{
+width: 500px;
+height: 70px;
+/*padding: 10px;*/
+/*
+
+margin-top: -350px;
+margin-left: 400px;
+z-index: 10;*/
+/*}*/
 
 .profile{
 width:100%;
